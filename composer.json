@@ -1,0 +1,33 @@
+{
+  "name": "elohim/laravel-security-check",
+  "description": "Validador de segurança para projetos Laravel",
+  "type": "library",
+    "keywords": [
+        "laravel",
+        "security",
+        "check"
+    ],
+    "authors": [
+    {
+      "name": "Leonardo Lima",
+      "email": "leonardo403@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Elohim\\LaravelSecurityCheck\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Elohim\\LaravelSecurityCheck\\LaravelSecurityCheckServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+  }
+}
