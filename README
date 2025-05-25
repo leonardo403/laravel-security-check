@@ -1,0 +1,38 @@
+# Laravel Security Check
+
+Este projeto tem como objetivo fornecer ferramentas e práticas recomendadas para verificar e melhorar a segurança de aplicações Laravel.
+
+## Funcionalidades
+
+- Verificação de configurações inseguras
+- Análise de permissões de arquivos e diretórios
+- Sugestões de melhorias de segurança
+
+## Como usar
+
+1. Clone o repositório:
+    ```
+    git clone https://github.com/leonardo403/laravel-security-check.git
+    ```
+2. Instale as dependências:
+    ```
+    composer install
+    ```
+3. Execute as verificações de segurança:
+    ```
+    php artisan security:check
+    ```
+
+## Requisitos
+
+- PHP >= 8.0
+- Composer
+- Laravel >= 9.x
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
