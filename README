@@ -8,7 +8,7 @@ Este projeto tem como objetivo fornecer ferramentas e práticas recomendadas par
 - Análise de permissões de arquivos e diretórios
 - Sugestões de melhorias de segurança
 
-## Como usar
+## Como utilizar clonando o repositório
 
 1. Clone o repositório:
     ```
@@ -22,6 +22,22 @@ Este projeto tem como objetivo fornecer ferramentas e práticas recomendadas par
     ```
     php artisan security:check
     ```
+
+## Utilizar com Composer Install
+1. Para instalar o pacote via Composer, adicione a seguinte linha ao seu `composer.json`:
+    ```json
+    "require": {
+        "elohim/laravel-security-check": "^1.0"
+    }
+    ```
+2. Em seguida, execute o comando:
+    ```
+    composer update
+    ```
+3. Após a instalação, você pode executar o comando de verificação de segurança:
+    ```
+    php artisan security:check
+    ```    
 
 ## Requisitos
 
