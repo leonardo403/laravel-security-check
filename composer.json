@@ -1,7 +1,6 @@
 {
   "name": "elohim/laravel-security-check",
   "description": "Validador de segurança para projetos Laravel",
-  "version": "1.0.1",
   "type": "library",
     "keywords": [
         "laravel",
