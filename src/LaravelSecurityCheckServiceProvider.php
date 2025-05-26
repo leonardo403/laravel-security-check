@@ -3,7 +3,8 @@
 namespace Elohim\LaravelSecurityCheck;
 
 use Illuminate\Support\ServiceProvider;
-use Elohim\LaravelSecurityCheck\Commands\SecurityScanCommand;
+use Elohim\LaravelSecurityCheck\Commands\ConfigSecurityScan;
+use PSpell\Config;
 
 class LaravelSecurityCheckServiceProvider extends ServiceProvider
 {
@@ -11,7 +12,7 @@ class LaravelSecurityCheckServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                SecurityScanCommand::class,
+                ConfigSecurityScan::class,
             ]);
         }
     }
