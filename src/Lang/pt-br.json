@@ -1,0 +1,79 @@
+{
+    "Validates configuration and best practices on Laravel based projects": "Valida a configuração e boas práticas em um projeto Laravel",
+    "Scanner :scanner not found": "Scanner :scanner não encontrado",
+    "Class :scanner don't implements ScannerInterface": "Classe :scanner não implementa ScannerInterface",
+
+    "== Running :scanner ==": "== Rodando :scanner ==",
+    "Dependency Scanner": "Verificação de dependências",
+    "Verifying outdated dependencies": "Verificando dependências desatualizadas",
+    "All dependencies are up to date": "Todas as dependências estão atualizadas",
+    "Outdated dependencies found:": "Dependências desatualizadas encontradas:",
+
+    "Environment Scanner": "Verificação de ambiente",
+    "Verifying .env": "Verificando .env",
+    "A .env file was found, please use enviroment variables instead": "Um arquivo .env foi encontrado, use variáveis de ambiente ao invés dele",
+    "APP_DEBUG=true -> Define as `false` in production environment": "APP_DEBUG=true -> Defina como `false` em ambientes de produção",
+    "APP_ENV=:current_env -> Use `production` in production environments": "APP_ENV=:current_env -> Use `production` em ambientes de produção",
+    "Invalid APP_KEY. Execute `php artisan key:generate`": "APP_KEY inválida. Execute `php artisan key:generate`",
+
+    "Debugbar Scanner": "Verificação do Debugbar",
+    "Verifying Debugbar...": "Verificando Debugbar...",
+    "Debugbar is enabled. Disable it in production": "Debugbar está habilitado. Desabilite no ambiente de produção",
+    "Debugbar disabled or not installed": "Debugbar está desabilitado ou não está instalado",
+
+    "Telescope Scanner": "Verificação do Telescope",
+    "Verifying Telescope...": "Verificando Telescope...",
+    "Telescope is enabled. Disable it in production": "Telescope está desabilitado ou não está instalado",
+    "Telescope is disabled or not installed": "Telescope está desativado ou não está instalado",
+
+    "APP_URL Scanner": "Verificação do APP_URL",
+    "Verifying APP_URL...": "Verificando APP_URL...",
+    "APP_URL is not defined. Define it on environment variables": "APP_URL não está definido. Defina-o nas variáveis de ambiente",
+    "Invalid APP_URL: :url": "APP_URL inválida: :url",
+    "APP_URL is set to localhost. Please provide the correct URL": "APP_URL está configurada para localhost. Por favor forneça a URL correta",
+    "APP_URL well defined: :url": "APP_URL corretamente configurada: :url",
+
+    "Cache Scanner": "Verificação do driver de cache",
+    "Verifying Cache...": "Verificando Cache...",
+    "CACHE_DRIVER not defined": "CACHE_DRIVER não definido",
+    "CACHE_DRIVER `:driver` not recommended for production. Try `memcached` or `redis`": "DRIVER_CACHE `:driver` não é recomendado para produção. Experimente `memcached` ou `redis`",
+    "CACHE_DRIVER well configured: :driver": "CACHE_DRIVER corretamente configurado: :driver",
+
+    "Queue Scanner": "Verificação do driver das filas",
+    "Verifying Queue...": "Verificando filas...",
+    "Queue driver not recommended for production: :driver": "Driver de fila não recomendado para produção: :driver",
+    "Queue driver well configured: :driver": "Driver configurado corretamente: :driver",
+
+    "Session Scanner": "Verificação do driver de sessão",
+    "Verifying Session...": "Verificando Session",
+    "SESSION_DRIVER not recommended for production: :driver": "SESSION_DRIVER não recomendado para produção: :driver",
+    "SESSION_DRIVER well configured: :driver": "SESSION_DRIVER configurado corretamente: :driver",
+
+    "CSRF Scanner": "Verificação do CSRF",
+    "Verifying CSRF...": "Verificando configuração do CSRF",
+    "session.secure_cookie is disabled. Enable it for aditional security": "session.secure_cookie não está habilitado. Habilite para segurança adicional.",
+    "session.secure_cookie is enabled": "session.secure_cookie está habilitado",
+    "session.same_site not defined. Set it to `strict` or `lax`": "session.same_site não foi configurado. Configure para `strict` ou `lax`",
+    "session.same_site well configured: :same_site": "session.same_site configurado corretamente: :same_site",
+
+    "Mailer Scanner": "Verificação do envio de email",
+    "Verifying Mailer...": "Verificando Mailer",
+    "MAIL_MAILER well configured: :driver": "MAIL_MAILER configurado corretamente: :driver",
+    "MAIL_MAILER not recommended for production: :driver": "MAIL_MAILER não recomendado para produção: :driver",
+
+    "Application Cache Scanner": "Verificação de cache da aplicação",
+    "Verifying Application and Routes Cache...": "Verificando cache de aplicação e rotas",
+    "Config cache not found. Execute: php artisan config:cache": "Config cache não encontrato. Execute: php artisan config:cache",
+    "Route cache not found. Execute: php artisan route:cache": "Route cache não encontrado. Execute: php artisan route:cache",
+    "Application and Routes Cache well configured": "Cache de aplicação e rotas corretamente configurado",
+
+    "Filesystem Permission Scanner": "Verificação de permissões no sistema de arquivos",
+    "Verifying permissions on files and folders...": "Verificando permissões em pastas e arquivos...",
+    "Incorrect permisions in :folder (current: :cur_perms, expected: 755)": "Permissões incorretas no diretório :folder (atual: :cur_perms, esperado: 755)",
+    "Filesystem permissions are correct": "Permissões no sistema de arquivos estão corretas",
+
+    "HTTP header Scanner": "Verificação de cabeçalhos HTTP",
+    "Verifying HTTP headers...": "Verificando cabeçalhos HTTP...",
+    "Missing header :header": "Faltando cabeçalho :header",
+    "HTTP headers are correct": "Cabeçalhos HTTP corretamente configurados"
+}
