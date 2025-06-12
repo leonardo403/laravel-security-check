@@ -1,6 +1,6 @@
 {
-  "name": "elohim/laravel-security-check",
-  "description": "Validador de segurança para projetos Laravel",
+  "name": "leonardolima/laravel-security-check",
+  "description": "Security validator for Laravel projects",
   "type": "library",
     "keywords": [
         "laravel",
