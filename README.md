@@ -1,3 +1,5 @@
+<img src="art/SecurityScan.png" 
+alt="Laravel Security Check" />
 # Laravel Security Check
 
 This project aims to provide tools and best practices to verify and improve the security of Laravel applications.
