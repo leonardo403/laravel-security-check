@@ -71,7 +71,7 @@ php artisan security:check
 ## Using with Composer Install
 1. Install the package via Composer:
 ```
-composer require elohim/laravel-security-check
+composer require leonardolima/laravel-security-check
 ```
 
 2. After installation, you can run the security check command:
