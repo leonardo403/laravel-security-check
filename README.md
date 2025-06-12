@@ -1,96 +1,94 @@
 # Laravel Security Check
 
-Este projeto tem como objetivo fornecer ferramentas e práticas recomendadas para verificar e melhorar a segurança de aplicações Laravel.
+This project aims to provide tools and best practices to verify and improve the security of Laravel applications.
 
-## Funcionalidades
+## Features
 
-- Verificação de configurações inseguras
-- Análise de permissões de arquivos e diretórios
+✅ Check for insecure configurations
 
-## Sugestões de melhorias de segurança
-1. Debugbar e Telescope
-Certifique-se de que pacotes como barryvdh/laravel-debugbar e laravel/telescope não estejam habilitados em produção.
+✅ Analyze file and directory permissions
 
-2. APP_URL
-Verifique se APP_URL está corretamente configurado para o domínio de produção.
+✅ Debugbar and Telescope
+Make sure packages like barryvdh/laravel-debugbar and laravel/telescope are not enabled in production.
 
-3. APP_KEY
-Já está validando, mas também pode checar se não é a chave padrão (base64:... sem alteração).
+✅ APP_URL
+Check if APP_URL is correctly configured for the production domain.
 
-4. Queue e Cache Drivers
-Evite usar drivers como sync ou file em produção para QUEUE_CONNECTION e CACHE_DRIVER.
+- APP_KEY
+Already validating, but you can also check if it is not the default key (base64:... unchanged).
 
-5. Session Driver
-Evite SESSION_DRIVER=file em produção, prefira redis ou database.
+✅ Queue and Cache Drivers
+Avoid using drivers like sync or file in production for QUEUE_CONNECTION and CACHE_DRIVER.
 
-6. Mail Driver
-Evite MAIL_MAILER=log ou MAIL_MAILER=array em produção.
+✅ Session Driver
+Avoid SESSION_DRIVER=file in production, prefer redis or database.
 
-7. Trusted Proxies
-Verifique se TRUSTED_PROXIES está configurado se estiver atrás de proxy/reverse proxy.
+✅ Mail Driver
+Avoid MAIL_MAILER=log or MAIL_MAILER=array in production.
 
-8. CORS
-Certifique-se de que as configurações de CORS não estejam abertas demais.
+- Trusted Proxies
+Make sure TRUSTED_PROXIES is set if you are behind a proxy/reverse proxy.
 
-9. Logging
-Evite LOG_CHANNEL=stack com single em produção, prefira daily ou sistemas externos.
+- CORS
+Make sure your CORS settings are not too open.
 
-10. Diretórios públicos
-Garanta que arquivos sensíveis (como .env, composer.lock, etc.) não estejam acessíveis publicamente.
+- Logging
+Avoid LOG_CHANNEL=stack with single in production, prefer daily or external systems.
 
-11. Composer Autoload
-Verifique se o autoload está otimizado (composer dump-autoload -o).
+✅ Public Directories
+Make sure sensitive files (like .env, composer.lock, etc.) are not publicly accessible.
 
-12. Config Cache
-Verifique se as configurações estão em cache (php artisan config:cache).
+- Composer Autoload
+Make sure autoload is optimized (composer dump-autoload -o).
 
-13. Route Cache
-Verifique se as rotas estão em cache (php artisan route:cache).
+- Config Cache
+Make sure configs are cached (php artisan config:cache).
 
-14. Debug Mode
-Além do APP_DEBUG, certifique-se de que não há outros modos de debug ativos.
+- Route Cache
+Make sure routes are cached (php artisan route:cache).
 
-15. Exposição de erros
-Verifique se APP_DEBUG está false e se não há handlers customizados expondo stack traces.
+✅ Debug Mode
+Besides APP_DEBUG, make sure that there are no other debug modes active.
 
+✅ Error Exposure
+Check that APP_DEBUG is false and that there are no custom handlers exposing stack traces.
 
+## How to use by cloning the repository
 
-## Como utilizar clonando o repositório
+1. Clone the repository:
+```
+git clone https://github.com/leonardo403/laravel-security-check.git
+```
+2. Install the dependencies:
+```
+composer install
+```
+3. Run the security checks:
+```
+php artisan security:check
+```
 
-1. Clone o repositório:
-    ```
-    git clone https://github.com/leonardo403/laravel-security-check.git
-    ```
-2. Instale as dependências:
-    ```
-    composer install
-    ```
-3. Execute as verificações de segurança:
-    ```
-    php artisan security:check
-    ```
+## Using with Composer Install
+1. Install the package via Composer:
+```
+composer require elohim/laravel-security-check
+```
 
-## Utilizar com Composer Install
-1. Para instalar o pacote via Composer:
-    ```
-    composer require elohim/laravel-security-check
-    ```
+2. After installation, you can run the security check command:
+```
+php artisan security:check
+```
 
-2. Após a instalação, você pode executar o comando de verificação de segurança:
-    ```
-    php artisan security:check
-    ```    
-
-## Requisitos
+## Requirements
 
 - PHP >= 8.0
 - Composer
 - Laravel >= 9.x
 
-## Contribuição
+## Contribution
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+Contributions are welcome! Feel free to open issues or send pull requests.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a licença MIT.
+This project is licensed under the MIT License.
