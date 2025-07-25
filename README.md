@@ -67,7 +67,7 @@ composer install
 ```
 3. Run the security checks:
 ```
-php artisan security:check
+php artisan security:scan
 ```
 
 ## Using with Composer Install
@@ -78,7 +78,7 @@ composer require leonardolima/laravel-security-check
 
 2. After installation, you can run the security check command:
 ```
-php artisan security:check
+php artisan security:scan
 ```
 
 ## Requirements
