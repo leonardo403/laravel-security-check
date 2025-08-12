@@ -3,11 +3,12 @@
 namespace Elohim\LaravelSecurityCheck\Scanners;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
+use Symfony\Component\Console\Output\ConsoleOutput;
 
 abstract class AbstractScanner
 {
-    protected const string CHECK = "✅";
-    protected const string WARNING = "⚠️";
+    protected const CHECK = "✅";
+    protected const WARNING = "⚠️";
 
     use InteractsWithIO;
 
@@ -15,6 +16,6 @@ abstract class AbstractScanner
 
     public function __construct()
     {
-        $this->output = $this->output ?? new \Symfony\Component\Console\Output\ConsoleOutput();
+        $this->output = $this->output ?? new ConsoleOutput();
     }
 }
