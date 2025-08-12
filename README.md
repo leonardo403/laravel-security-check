@@ -83,7 +83,7 @@ php artisan security:scan
 
 ## Requirements
 
-- PHP >= 8.0
+- PHP >= 8.2
 - Composer
 - Laravel >= 9.x
 
