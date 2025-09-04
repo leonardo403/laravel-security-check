@@ -1,6 +1,6 @@
 <?php
 
-namespace Elohim\LaravelSecurityCheck\Scanners;
+namespace LaravelSecurityCheck\Scanners;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Illuminate\Support\Facades\Process;

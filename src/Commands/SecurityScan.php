@@ -1,8 +1,8 @@
 <?php
 
-namespace Elohim\LaravelSecurityCheck\Commands;
+namespace LaravelSecurityCheck\Commands;
 
-use Elohim\LaravelSecurityCheck\Scanners\ScannerInterface;
+use LaravelSecurityCheck\Scanners\ScannerInterface;
 use Illuminate\Console\Command;
 use Illuminate\Support\Env;
 use Illuminate\Support\Facades\App;

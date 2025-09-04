@@ -1,6 +1,6 @@
 <?php
 
-namespace Elohim\LaravelSecurityCheck\Scanners;
+namespace LaravelSecurityCheck\Scanners;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Symfony\Component\Console\Output\ConsoleOutput;

@@ -16,13 +16,14 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Elohim\\LaravelSecurityCheck\\": "src/"
+      "LaravelSecurityCheck\\": "src/",
+      "LaravelSecurityCheck\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Elohim\\LaravelSecurityCheck\\LaravelSecurityCheckServiceProvider"
+        "LaravelSecurityCheck\\LaravelSecurityCheckServiceProvider"
       ]
     }
   },
