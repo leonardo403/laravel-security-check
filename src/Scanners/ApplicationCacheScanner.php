@@ -1,6 +1,6 @@
 <?php
 
-namespace Elohim\LaravelSecurityCheck\Scanners;
+namespace LaravelSecurityCheck\Scanners;
 
 final class ApplicationCacheScanner extends AbstractScanner implements ScannerInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Elohim\LaravelSecurityCheck;
+namespace LaravelSecurityCheck;
 
 use Illuminate\Support\ServiceProvider;
-use Elohim\LaravelSecurityCheck\Commands\SecurityScan;
+use LaravelSecurityCheck\Commands\SecurityScan;
 
 class LaravelSecurityCheckServiceProvider extends ServiceProvider
 {

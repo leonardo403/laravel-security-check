@@ -1,6 +1,6 @@
 <?php
 
-namespace Elohim\LaravelSecurityCheck\Scanners;
+namespace LaravelSecurityCheck\Scanners;
 
 final class CsrfScan extends AbstractScanner implements ScannerInterface
 {

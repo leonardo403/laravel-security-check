@@ -1,6 +1,6 @@
 <?php
 
-namespace Elohim\LaravelSecurityCheck\Scanners;
+namespace LaravelSecurityCheck\Scanners;
 
 use Illuminate\Support\Env;
 use Illuminate\Support\Facades\Config;
