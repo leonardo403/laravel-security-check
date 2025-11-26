@@ -10,10 +10,10 @@ final class CsrfScan extends AbstractScanner implements ScannerInterface
     {
         $this->info(self::CHECK . __("Verifying CSRF..."));
 
-        if (!config('session.secure_cookie')) {
-            $this->warn(self::WARNING . __("session.secure_cookie is disabled. Enable it for aditional security"));
+        if (!config('session.secure')) {
+            $this->warn(self::WARNING . __("session.secure is disabled. Enable it for aditional security"));
         } else {
-            $this->info(self::CHECK . __("session.secure_cookie is enabled"));
+            $this->info(self::CHECK . __("session.secure is enabled"));
         }
 
         if (!config('session.same_site')) {

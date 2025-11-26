@@ -51,8 +51,8 @@
 
     "CSRF Scanner": "Verificação do CSRF",
     "Verifying CSRF...": "Verificando configuração do CSRF",
-    "session.secure_cookie is disabled. Enable it for aditional security": "session.secure_cookie não está habilitado. Habilite para segurança adicional.",
-    "session.secure_cookie is enabled": "session.secure_cookie está habilitado",
+    "session.secure is disabled. Enable it for aditional security": "session.secure não está habilitado. Habilite para segurança adicional.",
+    "session.secure is enabled": "session.secure está habilitado",
     "session.same_site not defined. Set it to `strict` or `lax`": "session.same_site não foi configurado. Configure para `strict` ou `lax`",
     "session.same_site well configured: :same_site": "session.same_site configurado corretamente: :same_site",
 
