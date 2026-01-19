@@ -4,9 +4,11 @@ namespace LaravelSecurityCheck\Scanners;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Symfony\Component\Console\Output\ConsoleOutput;
+use LaravelSecurityCheck\Traits\ReportSettingTrait;
 
 abstract class AbstractScanner
 {
+    use ReportSettingTrait;
     protected const CHECK = "✅";
     protected const WARNING = "⚠️";
 
