@@ -1,59 +1,45 @@
-<img src="art/SecurityScan.png" 
-alt="Laravel Security Check" />
-# Laravel Security Check
+<img src="art/SecurityScan_sem_Github.png" 
+alt="Security Check Platform" />
+# Security Check Platform
 
-This project aims to provide tools and best practices to verify and improve the security of Laravel applications.
+Security Check Platform is a security analysis platform that helps teams catch flaws before they become incidents. In minutes, you get a clear view of the security posture of your projects.
 
 ## Features
 
-✅ Check for insecure configurations
+The application runs a single scanner that validates `.env` configurations:
 
-✅ Analyze file and directory permissions
+✅ **.env file**
+Warns if a `.env` file is present, since environment variables should be used instead.
 
-✅ Debugbar and Telescope
-Make sure packages like barryvdh/laravel-debugbar and laravel/telescope are not enabled in production.
+✅ **APP_DEBUG**
+Warns if `APP_DEBUG=true`, as it should be set to `false` in production.
 
-✅ APP_URL
-Check if APP_URL is correctly configured for the production domain.
+✅ **APP_ENV**
+Warns if `APP_ENV` is not set to `production` in production environments.
 
-- APP_KEY
-Already validating, but you can also check if it is not the default key (base64:... unchanged).
+✅ **APP_KEY**
+Warns if `APP_KEY` is empty or invalid, suggesting running `php artisan key:generate`.
 
-✅ Queue and Cache Drivers
-Avoid using drivers like sync or file in production for QUEUE_CONNECTION and CACHE_DRIVER.
+✅ **APP_URL**
+Warns if `APP_URL` is set to `http://localhost`, suggesting the production URL.
 
-✅ Session Driver
-Avoid SESSION_DRIVER=file in production, prefer redis or database.
+✅ **DB_CONNECTION / DB_HOST**
+Warns if using an in-memory SQLite database or if `DB_HOST` is not set correctly for MySQL in production.
 
-✅ Mail Driver
-Avoid MAIL_MAILER=log or MAIL_MAILER=array in production.
+✅ **DB_PORT**
+Warns if `DB_PORT` is empty or not a valid port.
 
-- Trusted Proxies
-Make sure TRUSTED_PROXIES is set if you are behind a proxy/reverse proxy.
+✅ **DB_DATABASE**
+Warns if `DB_DATABASE` is not set.
 
-- CORS
-Make sure your CORS settings are not too open.
+✅ **DB_USERNAME**
+Warns if `DB_USERNAME` is empty or set to `root`.
 
-- Logging
-Avoid LOG_CHANNEL=stack with single in production, prefer daily or external systems.
+✅ **DB_PASSWORD**
+Warns if `DB_PASSWORD` is empty or uses a weak/known password.
 
-✅ Public Directories
-Make sure sensitive files (like .env, composer.lock, etc.) are not publicly accessible.
-
-- Composer Autoload
-Make sure autoload is optimized (composer dump-autoload -o).
-
-- Config Cache
-Make sure configs are cached (php artisan config:cache).
-
-- Route Cache
-Make sure routes are cached (php artisan route:cache).
-
-✅ Debug Mode
-Besides APP_DEBUG, make sure that there are no other debug modes active.
-
-✅ Error Exposure
-Check that APP_DEBUG is false and that there are no custom handlers exposing stack traces.
+✅ **APP_URL**
+Warns if `APP_URL` is set to the default localhost URL, suggesting using the production URL in production environments.
 
 ## How to use by cloning the repository
 
