@@ -1,8 +1,8 @@
 <img src="art/SecurityScan_sem_Github.png" 
-alt="Security Check Platform" />
-# Security Check Platform
+alt="Laravel Security Check" />
+# Laravel Security Check
 
-Security Check Platform is a security analysis platform that helps teams catch flaws before they become incidents. In minutes, you get a clear view of the security posture of your projects.
+Laravel Security Check is a security analysis platform that helps teams catch flaws before they become incidents. In minutes, you get a clear view of the security posture of your projects.
 
 ## Features
 
