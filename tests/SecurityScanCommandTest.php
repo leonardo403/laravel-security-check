@@ -22,4 +22,6 @@ class SecurityScanCommandTest extends TestCase
             ->assertExitCode(0)
             ->expectsOutputToContain('== Running');
     }
+    
+    
 }
